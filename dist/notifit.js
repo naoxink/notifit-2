@@ -1,3 +1,7 @@
+/*
+ * notifIt2 - @naoxink
+ */
+
 var notif = function(options){
 
   function _notif(options){
@@ -124,13 +128,16 @@ var notif = function(options){
       }, 500)
     } // destroy
 
+    _this.getConfigCopy = function(){
+      return Object.assign({ 'id': _this.newNotifID() }, _this.config)
+    }
+
     _this.dismiss = function(){
       // temporal
       _this.destroy()
     }
 
     _this.init()
-
   } // _notif
 
   return new _notif(options)
