@@ -36,3 +36,9 @@ opacity|`number`|No||Notification opacity
 zindex|`number`|No||Personal z-index
 callback|`function`|No||Function that is executed when notification get dismissed
 clickable|`boolean`|No|true, false|Allows to click the notification without dismiss it
+
+# Feedback
+Do not hesitate to leave your feedback [here](https://github.com/naoxink/notifit-2/issues)
+
+# Contributions
+**All** contributions are welcome :)
