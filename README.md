@@ -6,6 +6,7 @@ notifIt version 2 (https://github.com/naoxink/notifIt)
 - [x] Simple
 - [x] Quick setup
 - [x] Customizable
+- [x] Size less than 4kb
 
 > Note: `notif_prompt` and `notif_confirm` are not included yet.
 
