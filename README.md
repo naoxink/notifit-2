@@ -1,4 +1,4 @@
-# notifit-2
+# notifit 2 ![version 1.0.0](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.0&x2=0) ![license MIT](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 notifIt version 2 (https://github.com/naoxink/notifIt)
 
 # Why notifit 2?
