@@ -50,22 +50,27 @@
 .notifit.success{
     background-color: yellowgreen;
     color: white;
+    border-bottom: 2px solid #76b532;
 }
 .notifit.error{
     background-color: orangered;
     color: white;
+    border-bottom: 2px solid #e14500;
 }
 .notifit.warning{
     background-color: orange;
     color: white;
+    border-bottom: 2px solid #e18700;
 }
 .notifit.info{
     background-color: deepskyblue;
     color: white;
+    border-bottom: 2px solid #009bff;
 }
 .notifit.default{
     background-color: #EEE;
     color: #444;
+    border-bottom: 2px solid #AAA;
 }
 
 
