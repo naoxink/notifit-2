@@ -19,6 +19,10 @@ and
 ```html
 <script src="notifit.min.js"></script>
 ```
+or via npm
+```
+npm i notifit2
+```
 ```javascript
 var myNotification = notif({
   'type': 'success',
