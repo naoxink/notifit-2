@@ -35,7 +35,7 @@ Key|Value type|Required|Options|Description
 ---|---|---|---|---
 type|`string`|No|success, error, info, warning|Notification type (color)
 msg|`string`|No||Message you want to display
-position|`string`|No|left, center, right|Position in the top of the document
+position|`string`|No|`top-right`, `top-center`, `top-left`, `bottom-right`, `bottom-center`, `bottom-left`|Position in the document (default: `top-right`)
 opacity|`number`|No||Notification opacity
 zindex|`number`|No||Personal z-index
 callback|`function`|No||Function that is executed when notification get dismissed
