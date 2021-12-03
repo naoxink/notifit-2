@@ -23,7 +23,7 @@ var notif = function(options){
 
     _this.init = function(){
       _this.id = _this.newNotifID()
-      _this.availablePositions = ['left', 'center', 'right', 'bottom']
+      _this.availablePositions = ['left', 'center', 'right', 'top-left', 'top-center', 'top-right','bottom-left', 'bottom-center', 'bottom-right']
       _this.config = Object.assign({
         'type': 'default',
         'position': 'right',
@@ -58,10 +58,19 @@ var notif = function(options){
       var styles = {  }
       var notificationWidth = parseFloat(window.getComputedStyle(_this.notification).getPropertyValue('width'))
       var documentWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
-      if(_this.config.position === 'center'){
+      if((['center', 'top-center', 'bottom-center']).indexOf(_this.config.position)>-1){
         styles.left =  parseInt((documentWidth / 2) - (notificationWidth / 2), 10) + 'px'
-      }else{
-        styles[_this.config.position] = 10 + 'px'
+      }else if((['left', 'top-left', 'bottom-left']).indexOf(_this.config.position)>-1){
+        styles.left = 10 + 'px'
+      }else {
+        styles.right = 10 + 'px'
+      }
+      if((['bottom-right', 'bottom-center', 'bottom-left']).indexOf(_this.config.position)>-1){
+        styles.top = 'auto'
+        styles.bottom = 10 + 'px'
+      }else {
+        styles.top = 10 + 'px'
+        styles.bottom = 'auto'
       }
       _this.addStyles(_this.notification, styles)
     }
